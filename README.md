@@ -7,6 +7,7 @@ This project use NXP JN5168 ZigBee module.
 
 PS : this project is a proof of concept yet
 
+<img width="300px" src="https://github.com/fairecasoimeme/ZigWS2812_controller/blob/master/Lifesmart%20cololight%20controled.jpg" />
 
 ## Version v0.1
 
