@@ -1,0 +1,1269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject>
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="0.876190861.1781733102.1301452172">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172" moduleId="org.eclipse.cdt.core.settings" name="Light_ExtendedColorLight_1">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1175" id="0.876190861.1781733102.1301452172" name="Light_ExtendedColorLight_1" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.988108998" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1444855351" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_ExtendedColorLight OTA=0 JENNIC_CHIP=JN5168" autoBuildTarget="all" buildPath="${ProjDirPath}/Common_Light/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1380438976" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.725967672" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<option id="gnu.c.compiler.option.include.paths.1028999678" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\NXP\bstudio_nxp\sdk\JN-SW-4166\Components\Common\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZCL Library/Include}&quot;"/>
+								</option>
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1858286088" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.174121705" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.108719599" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1906106878" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.525776433" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1479349538" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1876876638" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1365258223" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1381079075" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.255575252" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.603930611" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.820763046" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.485851044">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.485851044" moduleId="org.eclipse.cdt.core.settings" name="Light_DimmableLight_1">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1175" id="0.876190861.1781733102.485851044" name="Light_DimmableLight_1" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.485851044." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.622423244" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.2086470325" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_DimmableLight OTA=1 JENNIC_CHIP=JN5169" autoBuildTarget="all" buildPath="${ProjDirPath}/Common_Light/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1335210811" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1922993733" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1449865702" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1255463343" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1439082071" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1839737952" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1734436769" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.503893388" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1607353207" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.351606400" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1209621882" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1994209035" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1159201435" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.819276696" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.373688260">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.373688260" moduleId="org.eclipse.cdt.core.settings" name="Light_ColorTemperatureLight">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1175" id="0.876190861.1781733102.1301452172.373688260" name="Light_ColorTemperatureLight" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.373688260." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.752988971" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.2083102921" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_ColorTemperatureLight OTA=0 JENNIC_CHIP=JN5169" autoBuildTarget="all" buildPath="${ProjDirPath}/Common_Light/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.144431950" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.682561991" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.128613382" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1717059397" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1096215144" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1536201672" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1665429943" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1004534245" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.713359498" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1078276515" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.465387539" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1834596985" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1202793050" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.363806617" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.2117801952">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.2117801952" moduleId="org.eclipse.cdt.core.settings" name="Light_ColorLight">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.1781733102.1301452172.2117801952" name="Light_ColorLight" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.2117801952." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1688847601" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1685006846" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_ColorLight OTA=0 JENNIC_CHIP=JN5169" autoBuildTarget="all" buildPath="${ProjDirPath}/Common_Light/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1375480072" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.73389830" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1395792962" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1796470117" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.197736725" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.390645716" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.2074256784" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.965220603" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.551439728" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1803175430" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1431395986" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.396800933" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1875628848" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.641674872" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.781350071">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.781350071" moduleId="org.eclipse.cdt.core.settings" name="Light_OnOffLight">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.1781733102.1301452172.781350071" name="Light_OnOffLight" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.781350071." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1195477520" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.516575782" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_OnOffLight OTA=0 JENNIC_CHIP=JN5169" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.2039120953" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.734445820" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1178773110" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1971016597" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1437070312" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.652425624" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1515980939" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.22236352" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.391993163" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1936812215" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.56042069" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.2122639647" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1373130922" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.778256778" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.485851044.1387792494">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.485851044.1387792494" moduleId="org.eclipse.cdt.core.settings" name="Light_DimmablePlug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.1781733102.485851044.1387792494" name="Light_DimmablePlug" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.485851044.1387792494." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1660171277" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.633180392" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_DimmablePlug" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.563589826" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1838478519" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1564905042" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.427530720" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.831464824" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.109930775" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.350309417" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1428715727" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1001888542" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.393713297" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1208882758" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.2099640450" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.34321078" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1968502094" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.781350071.2096449454">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.781350071.2096449454" moduleId="org.eclipse.cdt.core.settings" name="Light_OnOffPlug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.1781733102.1301452172.781350071.2096449454" name="Light_OnOffPlug" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.781350071.2096449454." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.953468883" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.961805647" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_OnOffPlug" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.361932340" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.433569018" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1442427068" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1683845836" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1545224691" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.878997883" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1070590387" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.372091899" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1955251699" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2142628215" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.799802497" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1177633971" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.778255263" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1333768786" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.2112005733.993807050.1593157031">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.2112005733.993807050.1593157031" moduleId="org.eclipse.cdt.core.settings" name="Controller_ColorSceneController">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.2112005733.993807050.1593157031" name="Controller_ColorSceneController" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.2112005733.993807050.1593157031." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1336584641" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.365060230" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="REMOTE=Controller_ColorSceneController" buildPath="${ProjDirPath}/Common_Controller/Build/ " cleanBuildTarget="clean all" command="make" id="com.beyondsemi.builder.cdt.gnu.1679431608" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1714711105" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.379427547" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1504203685" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1800736837" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.904228323" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1327362087" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.662737593" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1015598556" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1354608179" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZPSNWK/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Common/Include}&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.75714607" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1842971697" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1312674160" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.331687140" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.997227188" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.2112005733.993807050.1593157031.81810401">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.2112005733.993807050.1593157031.81810401" moduleId="org.eclipse.cdt.core.settings" name="Controller_ColorController">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.2112005733.993807050.1593157031.81810401" name="Controller_ColorController" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.2112005733.993807050.1593157031.81810401." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1153644093" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1298776671" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="REMOTE=Controller_ColorController" buildPath="${ProjDirPath}/Common_Controller/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.958148313" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.160530336" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.796560014" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.104496003" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1073712065" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.233076932" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.162943846" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.2001066928" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1828740131" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1192254210" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.2113933346" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.102641125" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.631158521" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1051262470" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481" moduleId="org.eclipse.cdt.core.settings" name="Controller_NonColorController">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481" name="Controller_NonColorController" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1231685196" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1211829824" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="REMOTE=Controller_NonColorController" buildPath="${ProjDirPath}/Common_Controller/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.1120273408" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.35671983" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.2128446903" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.341795024" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.135180972" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1695995830" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1867517008" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1891886623" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1450157653" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1199924833" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1366676309" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1295585020" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.398405058" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.233619321" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481.2125498215">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481.2125498215" moduleId="org.eclipse.cdt.core.settings" name="Controller_NonColorSceneController">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481.2125498215" name="Controller_NonColorSceneController" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.2112005733.993807050.1593157031.81810401.2121998481.2125498215." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1523529495" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.2009173642" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="REMOTE=Controller_NonColorSceneController" buildPath="${ProjDirPath}/Common_Controller/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.184563856" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1643284239" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1441342552" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1585997553" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.533503013" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.186476026" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.238357229" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1196794468" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.2046531775" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.157538338" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1390892501" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.777988700" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.2065535124" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1364662143" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.2112005733.993807050.1593157031.81810401.857645420.1782608160">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.2112005733.993807050.1593157031.81810401.857645420.1782608160" moduleId="org.eclipse.cdt.core.settings" name="Controller_OnOffSensor">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.2112005733.993807050.1593157031.81810401.857645420.1782608160" name="Controller_OnOffSensor" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.2112005733.993807050.1593157031.81810401.857645420.1782608160." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1324527126" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.522402949" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="REMOTE=Controller_OnOffSensor" buildPath="${ProjDirPath}/Common_Controller/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.44834154" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.527067015" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.138873270" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1324276671" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.261217295" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.946901243" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1495881855" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.176071748" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.551389040" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.696050480" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.717856702" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.591946922" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1702614359" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.602605496" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.485851044.1286750732">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.485851044.1286750732" moduleId="org.eclipse.cdt.core.settings" name="Light_DimmableLight_2">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1190" id="0.876190861.1781733102.485851044.1286750732" name="Light_DimmableLight_2" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.485851044.1286750732." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.2077318172" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.344861393" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_DimmableLight DR=DR1190 OTA=0" autoBuildTarget="all" buildPath="${ProjDirPath}/Common_Light/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1638666229" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1094661829" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.628371631" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1342289207" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.46491017" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.976347527" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1088539648" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1135749711" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1305119208" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1108458296" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.83492184" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1253149384" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1541193386" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.187231379" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.485851044.666916891">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.485851044.666916891" moduleId="org.eclipse.cdt.core.settings" name="Light_DimmableLight_3">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1192" id="0.876190861.1781733102.485851044.666916891" name="Light_DimmableLight_3" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.485851044.666916891." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1573827107" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.795477003" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_DimmableLight DR=DR1192 OTA=0 JENNIC_CHIP=JN5168" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.564532733" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1824049155" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.2001952956" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1503915575" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.798950992" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1022211977" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.445715325" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.967797402" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.595962472" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.22659320" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.379407107" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.986859341" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1183428210" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1942809065" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.373688260.1098482997">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.373688260.1098482997" moduleId="org.eclipse.cdt.core.settings" name="Light_ColorTemperatureLight_2">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1221" id="0.876190861.1781733102.1301452172.373688260.1098482997" name="Light_ColorTemperatureLight_2" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.373688260.1098482997." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1452425625" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.2047321062" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_ColorTemperatureLight DR=DR1221" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.89594396" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1590498919" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1597020239" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.64948594" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.247634885" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.945832587" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1131341118" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1852148002" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.657859966" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.926491769" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.44848355" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1684304827" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1557236614" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.209687368" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.27764688">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.27764688" moduleId="org.eclipse.cdt.core.settings" name="OTAServer">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="" id="0.876190861.1781733102.1301452172.27764688" name="OTAServer" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.27764688." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1365793556" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1126498460" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="JENNIC_CHIP=JN5169" autoBuildTarget="all" buildPath="${ProjDirPath}/OTAServer/Build/ " cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1080977861" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1993608888" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.1425088601" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.994943703" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.360745480" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.61425448" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1487939799" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.389829424" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1133042842" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1914368913" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1435608233" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1097767486" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.247628471" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1584668568" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.373688260.1098482997.1831265266">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.373688260.1098482997.1831265266" moduleId="org.eclipse.cdt.core.settings" name="Light_ColorTemperatureLight_3">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="DR1221_Dimic" id="0.876190861.1781733102.1301452172.373688260.1098482997.1831265266" name="Light_ColorTemperatureLight_3" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.373688260.1098482997.1831265266." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.2099545893" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.661907100" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="LIGHT=Light_ColorTemperatureLight JENNIC_CHIP=JN5168 DR=DR1221_Dimic OPT1=NULL  OPT2=DUAL_PWM  LINEAR_MODE=TRUE" buildPath="${ProjDirPath}/Common_Light/Build/ " command="make" id="com.beyondsemi.builder.cdt.gnu.1367895673" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.909803504" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.673370296" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.937293166" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.1822350962" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.883017650" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1692405902" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1625512798" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1438408341" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.200122133" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1281509988" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.14061503" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.626256037" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.782586001" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="0.876190861.1781733102.1301452172.1855332180">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.876190861.1781733102.1301452172.1855332180" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="JN-AN-1133-ZigBee-Pro-Lightswitch" buildProperties="" description="Build all binaries" id="0.876190861.1781733102.1301452172.1855332180" name="Release" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.876190861.1781733102.1301452172.1855332180." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.770951037" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.501637604" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder autoBuildTarget="all" buildPath="${ProjDirPath}" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.138863387" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1524568534" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<option id="gnu.c.compiler.option.include.paths.602374883" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;C:\NXP\bstudio_nxp\sdk\JN-SW-4166\Components\Common\Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZCL Library/Include}&quot;"/>
+								</option>
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.817499182" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.2073397119" superClass="com.beyondsemi.assembler.macro.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.2082015667" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1274867414" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.399120575" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1152591695" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1998482032" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1072971676" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.1740243426" superClass="com.beyondsemi.assembler.input"/>
+							</tool>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1126588876" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.111616926" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.1126038795" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ZSL-Test-App-Switch.null.301096766" name="ZSL-Test-App-Switch"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Light_ColorTemperatureLight_3">
+			<resource resourceType="PROJECT" workspacePath="/JN-AN-1171-ZigBee-LightLink-Demo"/>
+		</configuration>
+		<configuration configurationName="Light_ColorTemperatureLight">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_MR16L">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_SSL2108S">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="OTAServer">
+			<resource resourceType="PROJECT" workspacePath="/ZBProv1.1"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_MR16E">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_OnOffPlug">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Controller_ColourSceneControllerForShows">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Controller_ColorSceneController">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_ColorTemperatureLight_2">
+			<resource resourceType="PROJECT" workspacePath="/ZBProv1.1"/>
+		</configuration>
+		<configuration configurationName="Controller_ColorController">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_OnOffLight">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmablePlug">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_ExtendedColorLight_1173">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Controller_OnOffSensor">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_3">
+			<resource resourceType="PROJECT" workspacePath="/ZBProv1.1"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_1">
+			<resource resourceType="PROJECT" workspacePath="/ZBProv1.1"/>
+		</configuration>
+		<configuration configurationName="Light_ExtendedColorLight">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_ColorLight">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_2">
+			<resource resourceType="PROJECT" workspacePath="/ZBProv1.1"/>
+		</configuration>
+		<configuration configurationName="Light_ExtendedColorLight_1"/>
+		<configuration configurationName="Release"/>
+		<configuration configurationName="Light_DimmableLight">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Controller_NonColorController">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Light_DimmableLight_SSL2108A">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+		<configuration configurationName="Controller_NonColorSceneController">
+			<resource resourceType="PROJECT" workspacePath="/ZSL-Test-App"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings">
+		<doc-comment-owner id="org.eclipse.cdt.internal.ui.text.doctools.NullDocCommentOwner">
+			<path value=""/>
+		</doc-comment-owner>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
+		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="makefileGenerator">
+				<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+			<buildOutputProvider>
+				<openAction enabled="true" filePath=""/>
+				<parser enabled="true"/>
+			</buildOutputProvider>
+			<scannerInfoProvider id="specsFile">
+				<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+				<parser enabled="true"/>
+			</scannerInfoProvider>
+		</profile>
+		<scannerConfigBuildInfo instanceId="0.876190861.632441102;0.876190861.632441102.1510511643;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.41286570;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1078407014">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.632441102;0.876190861.632441102.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.187165845;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.770715021">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="ba-elf-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.2112005733">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.632441102">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="ba-elf-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.2112005733.993807050.1593157031">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.2112005733.993807050.1593157031;0.876190861.2112005733.993807050.1593157031.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1714711105;com.beyondsemi.base.ba.elf.c.compiler.input.379427547">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="ba-elf-gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.1781733102">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.1781733102.1301452172;0.876190861.1781733102.1301452172.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.725967672;com.beyondsemi.base.ba.elf.c.compiler.input.1858286088">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.1808199248">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.876190861.2112005733.993807050">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
