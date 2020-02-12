@@ -8,6 +8,13 @@ This project use NXP JN5168 ZigBee module.
 PS : this project is a proof of concept yet
 
 
+## Version v0.2
+
+* Add button compatibility for reset factory
+* Fix number of LEDs --> 720 drivable LEDs
+* Fix WS2812 driver (stability)
+* Fix color for identify command
+
 ## Version v0.1
 
 * Add Philips Hue differents key to be compatible

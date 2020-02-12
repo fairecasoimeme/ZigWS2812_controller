@@ -45,6 +45,10 @@
 #include "app_timer_driver.h"
 #include "pwrm.h"
 #include "app_buttons.h"
+
+#include "PDM.h"
+
+
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
 /****************************************************************************/
@@ -52,7 +56,8 @@
 #define TRACE_APP_BUTTON           	FALSE
 #endif
 
-
+uint32_t u32PressTime=0;
+uint32 u32OldFrameCtr;
 
 
 /****************************************************************************/
@@ -220,7 +225,8 @@ OS_TASK(APP_ButtonsScanTask)
         /*
          * all buttons high so set dio to interrupt on change
          */
-        //DBG_vPrintf(TRACE_APP_BUTTON, "ALL UP\n", i);
+    	u32PressTime=0;
+        DBG_vPrintf(TRACE_APP_BUTTON, "ALL UP\n", i);
         vAHI_DioInterruptEnable(APP_BUTTONS_DIO_MASK, 0);
     }
     else
@@ -228,6 +234,20 @@ OS_TASK(APP_ButtonsScanTask)
         /*
          * one or more buttons is still depressed so continue scanning
          */
+    	u32PressTime++;
+    	if (u32PressTime >= 300)
+    	{
+    		 DBG_vPrintf(TRACE_APP_BUTTON, "Long press\n");
+    		 APP_tsLightEvent sButtonEvent;
+			sButtonEvent.eType = APP_E_EVENT_POR_FACTORY_RESET;
+			sButtonEvent.uEvent.sButton.u8Button = i;
+
+
+
+			OS_ePostMessage(APP_msgEvents, &sButtonEvent);
+			u32PressTime=0;
+    	}
+
         OS_eContinueSWTimer(APP_ButtonsScanTimer, APP_TIME_MS(10), NULL);
     }
 }

@@ -214,7 +214,7 @@ PUBLIC void vAPP_ZCL_DeviceSpecific_Init(void)
     memcpy(sLight.sBasicServerCluster.au8ManufacturerName, "ZiGate", CLD_BAS_MANUF_NAME_SIZE);
     memcpy(sLight.sBasicServerCluster.au8ModelIdentifier, "WS2812_light_controller", CLD_BAS_MODEL_ID_SIZE);
     memcpy(sLight.sBasicServerCluster.au8DateCode, "20200124", CLD_BAS_DATE_SIZE);
-    memcpy(sLight.sBasicServerCluster.au8SWBuildID, "0001-0001", CLD_BAS_SW_BUILD_SIZE);
+    memcpy(sLight.sBasicServerCluster.au8SWBuildID, "0001-0002", CLD_BAS_SW_BUILD_SIZE);
 
     sIdEffect.u8Effect = E_CLD_IDENTIFY_EFFECT_STOP_EFFECT;
     sIdEffect.u8Tick = 0;
@@ -269,7 +269,7 @@ PUBLIC void APP_vHandleIdentify(uint16 u16Time) {
         {
             /* Set the Identify levels */
             DBG_vPrintf(TRACE_PATH, "\nPath 4");
-            vRGBLight_SetLevels(TRUE, 254, 250, 0, 0);
+            vRGBLight_SetLevels(TRUE, 254, 150, 150, 150);
         }
 }
 
