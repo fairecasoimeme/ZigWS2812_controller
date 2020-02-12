@@ -18,6 +18,13 @@ In progress
 ## Hardware
 In progress
 
+## Version v0.2
+
+* Add button compatibility for reset factory
+* Fix number of LEDs --> 720 drivable LEDs
+* Fix WS2812 driver (stability)
+* Fix color for identify command
+
 ## Version v0.1
 
 * Add Philips Hue differents key to be compatible

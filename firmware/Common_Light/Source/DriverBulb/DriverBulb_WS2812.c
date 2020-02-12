@@ -58,7 +58,7 @@
 
 /* Default to 8 LEDs in the string */
 #ifndef WS2812_DRIVER_LED_COUNT
-#define WS2812_DRIVER_LED_COUNT 19
+#define WS2812_DRIVER_LED_COUNT 720
 #endif /* WS2812_DRIVER_LED_COUNT */
 
 #ifndef WS2812_DRIVER_TICK_DIVISOR

@@ -300,7 +300,7 @@ PUBLIC teNODE_STATES eGetNodeState(void)
  *
  ****************************************************************************/
 PUBLIC void APP_vInitialiseNode(void) {
-#if (defined DR1173) || (defined DR1175)
+#if (defined DR1173) || (defined DR1175) || (defined WS2812)
     bool_t bDeleteRecords = FALSE;
 #endif
     PDM_teStatus eStatus;
@@ -316,7 +316,7 @@ PUBLIC void APP_vInitialiseNode(void) {
 
     sZllState.eNodeState = E_STARTUP;
 
-    #if (defined DR1173) || (defined DR1175)
+    #if (defined DR1173) || (defined DR1175) || (defined WS2812)
         bDeleteRecords = APP_bButtonInitialise();
     #endif
 
@@ -352,7 +352,7 @@ PUBLIC void APP_vInitialiseNode(void) {
     ZPS_eAplAfInit();
 
 
-#if (defined DR1175) || (defined DR1173)
+#if (defined DR1175) || (defined DR1173) || (defined WS2812)
     if (bDeleteRecords) {
         PDM_vDeleteDataRecord(PDM_ID_APP_SCENES_DATA);
         while (APP_bButtonInitialise());
@@ -365,7 +365,7 @@ PUBLIC void APP_vInitialiseNode(void) {
 
 
 
-#if (defined DR1175) || (defined DR1173)
+#if (defined DR1175) || (defined DR1173) || (defined WS2812)
     /* If required, at this point delete the network context from flash, perhaps upon some condition
      * For example, check if a button is being held down at reset, and if so request the Persistent
      * Data Manager to delete all its records:
@@ -556,8 +556,25 @@ OS_TASK(APP_ZPR_Light_Task)
 
         }
     } else if (OS_eCollectMessage(APP_msgEvents, &sAppEvent) == OS_E_OK) {
+    	ZPS_tsNwkNib *psNib;
+    	switch (sAppEvent.eType)
+    	{
+    		case APP_E_EVENT_POR_FACTORY_RESET:
 
-        //  DBG_vPrintf(TRACE_APP, "\nE:%s(%d)\n",
+				psNib = ZPS_psNwkNibGetHandle(ZPS_pvAplZdoGetNwkHandle());
+
+				DBG_vPrintf(TRACE_LIGHT_NODE, "\n\nPOR Factory Reset\n\n");
+
+				u32OldFrameCtr = psNib->sTbl.u32OutFC + 10;
+				ZPS_eAplZdoLeaveNetwork(0, FALSE,FALSE);
+
+    			break;
+    		default:
+    			break;
+    	}
+
+
+    	//  DBG_vPrintf(TRACE_APP, "\nE:%s(%d)\n",
         //              apcAPPEventStrings[sAppEvent.eType],sAppEvent.eType);
     } else if (OS_eCollectMessage(APP_DiscoveryEvents, &sDiscoveryEvent) == OS_E_OK) {
         //DBG_vPrintf(TRACE_CLASSIC, "APP_DiscoveryEvent\n");
