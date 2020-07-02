@@ -5,7 +5,6 @@ If you get a Philips Hue or ZiGate gateway, you could play with your strip or ot
 
 This project use NXP JN5168 ZigBee module.
 
-PS : this project is a proof of concept yet
 
 Vidéo : 
 [![Watch the video](https://img.youtube.com/vi/ZlssjOw1DXE/maxresdefault.jpg)](https://youtu.be/ZlssjOw1DXE)
@@ -17,6 +16,12 @@ In progress
 
 ## Hardware
 In progress
+
+## Version v0.3
+
+* Add blue led status. Specially blink led when commissioning mode is actived or when device has joined network
+* Add button function. Simple clic toggle the WS2812 LEDs
+* Fix channels to 11,15,20,25,26
 
 ## Version v0.2
 
