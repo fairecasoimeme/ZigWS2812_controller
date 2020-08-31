@@ -47,7 +47,7 @@
 
 
 #include "ota.h"
-//#include "ha.h"
+#include "ha.h"
 #include "zll.h"
 #include "zcl_options.h"
 
@@ -57,6 +57,7 @@
 #include "app_common.h"
 #include "Utilities.h"
 #include "rnd_pub.h"
+
 
 /****************************************************************************/
 /***        Macro Definitions                                             ***/
@@ -142,7 +143,7 @@ PRIVATE void vOTAPersist(void);
 PRIVATE void vRestetOTADiscovery(void);
 PRIVATE void vManageDLProgressState(void);
 PRIVATE uint8 u8VerifyLinkKey(tsOTA_CallBackMessage *psCallBackMessage);
-
+PUBLIC void vDumpFlashData(uint32 u32FlashByteLocation, uint32 u32EndLocation);
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
@@ -167,12 +168,8 @@ PRIVATE teOtA_State eOTA_State = OTA_FIND_SERVER;
 PRIVATE uint32 u32TimeOut=0;
 PRIVATE uint32 u32OTARetry;
 PRIVATE bool_t bWaitUgradeTime;
-PRIVATE bool_t bKeyVerified = FALSE;
 
 PRIVATE uint32 u32OTAQueryTimeinSec = OTA_SERVER_QUERY_TIME_IN_SEC-30;
-PRIVATE uint16 u16ExpectedManuf;
-PRIVATE uint16 u16ExpectedFileType;
-PRIVATE uint32 u32ExpectedVersion;
 
 PRIVATE uint8 au8MacAddressVolatile[8];
 
@@ -204,7 +201,9 @@ PUBLIC void vAppInitOTA(void)
 
 #ifdef JENNIC_CHIP_FAMILY_JN516x
   #if JENNIC_CHIP==JN5168
-		    uint8 u8StartSector[1] = {0};
+		    uint8 u8StartSector[1] = {8};
+			sNvmDefs.u32SectorSize = 32*1024; /* Sector Size = 32K*/
+    		sNvmDefs.u8FlashDeviceType = E_FL_CHIP_INTERNAL;
   #elif JENNIC_CHIP == JN5169
 		    uint8 u8StartSector[1] = {8};     /* TODO  */
   #endif
@@ -217,16 +216,6 @@ PUBLIC void vAppInitOTA(void)
     {
 	    DBG_vPrintf(TRACE_APP_OTA, "eOTA_UpdateClientAttributes returned error 0x%x\n", eZCL_Status);
     }
-
-#if JENNIC_CHIP==JN5168
-    sNvmDefs.u32SectorSize = 64*1024; /* Sector Size = 64K*/
-    sNvmDefs.u8FlashDeviceType = E_FL_CHIP_AUTO;
-#elif JENNIC_CHIP==JN5169
-    sNvmDefs.u32SectorSize = 32*1024; /* Sector Size = 32K*/
-    sNvmDefs.u8FlashDeviceType = E_FL_CHIP_INTERNAL;
-#else
-    error define the chip
-#endif
 
     u8CurrentImageSector = u32REG_SysRead(REG_SYS_FLASH_REMAP) & 0xf;
     if (u8CurrentImageSector)
@@ -247,7 +236,7 @@ PUBLIC void vAppInitOTA(void)
 	    		OTA_CLIENT_EP,
 	    		u8StartSector,
 	    		OTA_MAX_IMAGES_PER_ENDPOINT,
-	    		4,
+	    		8,
 	    		FALSE,
 	    		au8CAPublicKey);
   #elif JENNIC_CHIP==JN5169
@@ -275,7 +264,7 @@ PUBLIC void vAppInitOTA(void)
     	    DBG_vPrintf(TRACE_APP_OTA,"File ID = 0x%08x\n",sOTAHeader.u32FileIdentifier);
     	    DBG_vPrintf(TRACE_APP_OTA,"Header Ver ID = 0x%04x\n",sOTAHeader.u16HeaderVersion);
     	    DBG_vPrintf(TRACE_APP_OTA,"Header Length ID = 0x%04x\n",sOTAHeader.u16HeaderLength);
-    	    DBG_vPrintf(TRACE_APP_OTA,"Header Control Filed = 0x%04x\n",sOTAHeader.u16HeaderControlField);
+    	    DBG_vPrintf(TRACE_APP_OTA,"Header Control Field = 0x%04x\n",sOTAHeader.u16HeaderControlField);
     	    DBG_vPrintf(TRACE_APP_OTA,"Manufac Code = 0x%04x\n",sOTAHeader.u16ManufacturerCode);
     	    DBG_vPrintf(TRACE_APP_OTA,"Image Type = 0x%04x\n",sOTAHeader.u16ImageType);
     	    DBG_vPrintf(TRACE_APP_OTA,"File Ver = 0x%08x\n",sOTAHeader.u32FileVersion);
@@ -431,7 +420,7 @@ PUBLIC void vRunAppOTAStateMachine(void)
 PUBLIC void vHandleAppOtaClient(tsOTA_CallBackMessage *psCallBackMessage)
 {
     tsZCL_Address sZCL_Address;
-   //DBG_vPrintf(TRACE_APP_OTA, "OTA Event Id = %d\n",psCallBackMessage->eEventId);
+   DBG_vPrintf(TRACE_APP_OTA, "OTA Event Id = %d\n",psCallBackMessage->eEventId);
 
     if(psCallBackMessage->eEventId == E_CLD_OTA_COMMAND_QUERY_NEXT_IMAGE_RESPONSE )
     {
@@ -450,15 +439,6 @@ PUBLIC void vHandleAppOtaClient(tsOTA_CallBackMessage *psCallBackMessage)
                 DBG_vPrintf(TRACE_APP_OTA,"File Ver  0x%08x \n",psCallBackMessage->uMessage.sQueryImageResponsePayload.u32FileVersion);
                 DBG_vPrintf(TRACE_APP_OTA,"Manufacture Code 0x%04x  \n",psCallBackMessage->uMessage.sQueryImageResponsePayload.u16ManufacturerCode);
                 DBG_vPrintf(TRACE_APP_OTA,"Image Type 0x%04x\n\n\n",psCallBackMessage->uMessage.sQueryImageResponsePayload.u16ImageType);
-
-                /* Save the credentials from the QNI response
-                 * These can be compared later once the image header is received
-                 * the app will be notified by a Verify Header event callback
-                 *
-                 */
-                u16ExpectedManuf = psCallBackMessage->uMessage.sQueryImageResponsePayload.u16ManufacturerCode;
-                u16ExpectedFileType = psCallBackMessage->uMessage.sQueryImageResponsePayload.u16ImageType;
-                u32ExpectedVersion = psCallBackMessage->uMessage.sQueryImageResponsePayload.u32FileVersion;
             }
         } else {
             eOTA_State = OTA_FIND_SERVER;
@@ -473,23 +453,22 @@ PUBLIC void vHandleAppOtaClient(tsOTA_CallBackMessage *psCallBackMessage)
     	DBG_vPrintf(TRACE_APP_OTA,"Current Ver = 0x%08x\n",psCallBackMessage->uMessage.sImageVersionVerify.u32CurrentImageVersion );
     	DBG_vPrintf(TRACE_APP_OTA,"Notified Ver = 0x%08x\n",psCallBackMessage->uMessage.sImageVersionVerify.u32NotifiedImageVersion);
 
-    	if (psCallBackMessage->uMessage.sImageVersionVerify.u32CurrentImageVersion ==
-    		psCallBackMessage->uMessage.sImageVersionVerify.u32NotifiedImageVersion	)
-    	{
-				psCallBackMessage->uMessage.sImageVersionVerify.eImageVersionVerifyStatus =E_ZCL_FAIL;
-				/* go back to waiting */
-				DBG_vPrintf(TRACE_APP_OTA|OTA_LNT,  "UNWANTED IMAGE\n");
-				eOTA_State = OTA_QUERYIMAGE;
-				u32OTAQueryTimeinSec = 0;
-    	} else {
-    	    /* down load about to start */
-    	    vStartEffect(E_CLD_IDENTIFY_EFFECT_BREATHE);
-    	    eOTA_State = OTA_DL_PROGRESS;
-    	    u32OTAQueryTimeinSec = 0;
-    	    u32TimeOut = 0;
-    	    bKeyVerified = FALSE;
-    	    DBG_vPrintf(OTA_LNT, "Accept Image\n");
-    	}
+        if (psCallBackMessage->uMessage.sImageVersionVerify.u32CurrentImageVersion ==
+            psCallBackMessage->uMessage.sImageVersionVerify.u32NotifiedImageVersion    )
+        {
+                psCallBackMessage->uMessage.sImageVersionVerify.eImageVersionVerifyStatus =E_ZCL_FAIL;
+                /* go back to waiting */
+                DBG_vPrintf(TRACE_APP_OTA|OTA_LNT,  "UNWANTED IMAGE\n");
+                eOTA_State = OTA_QUERYIMAGE;
+                u32OTAQueryTimeinSec = 0;
+        } else {
+            /* down load about to start */
+            vStartEffect(E_CLD_IDENTIFY_EFFECT_BREATHE);
+            eOTA_State = OTA_DL_PROGRESS;
+            u32OTAQueryTimeinSec = 0;
+            u32TimeOut = 0;
+            DBG_vPrintf(OTA_LNT, "Accept Image\n");
+        }
     }
 
 #ifdef OTA_STRING_COMPARE
@@ -612,6 +591,40 @@ PUBLIC void vHandleAppOtaClient(tsOTA_CallBackMessage *psCallBackMessage)
     u32TimeOut = 0;
 }
 
+/****************************************************************************
+ *
+ * NAME: vDumpFlashData
+ *
+ * DESCRIPTION:
+ * Dumps the OTA downloaded data on debug terminal at a chunk of 16 bytes
+ *
+ * RETURNS:
+ * void
+ *
+ ****************************************************************************/
+PUBLIC void vDumpFlashData(uint32 u32FlashByteLocation, uint32 u32EndLocation)
+{
+    uint8 au8Data[16];
+
+    for (;u32FlashByteLocation<=u32EndLocation;u32FlashByteLocation +=16 )
+    {
+        bAHI_FullFlashRead(u32FlashByteLocation,16,au8Data);
+
+        uint8 u8Len;
+        DBG_vPrintf(TRACE_APP_OTA,"0x%08x : ",u32FlashByteLocation);
+        for (u8Len=0;u8Len<16;u8Len++)
+        {
+            DBG_vPrintf(TRACE_APP_OTA,"%02x ",au8Data[u8Len]);
+        }
+        DBG_vPrintf(TRACE_APP_OTA,"\n");
+
+        volatile uint32 u32Delay=10000;
+        for(u32Delay=10000;u32Delay>0;u32Delay--);
+
+        vAHI_WatchdogRestart();
+    }
+}
+
 /****************************************************************************/
 /***        Local Functions                                               ***/
 /****************************************************************************/
@@ -629,7 +642,7 @@ PUBLIC void vHandleAppOtaClient(tsOTA_CallBackMessage *psCallBackMessage)
 PRIVATE uint8 u8VerifyLinkKey(tsOTA_CallBackMessage *psCallBackMessage)
 {
 
-
+    static bool_t bKeyVerified = FALSE;
 
     //DBG_vPrintf(TRACE_APP_OTA, "Block Resp Offset = %d \n",psCallBackMessage->uMessage.sImageBlockResponsePayload.uMessage.sBlockPayloadSuccess.u32FileOffset);
     //DBG_vPrintf(TRACE_APP_OTA, "Flash_start = 0x%08x\n",&_flash_start);
@@ -767,30 +780,27 @@ PRIVATE uint8 u8VerifyLinkKey(tsOTA_CallBackMessage *psCallBackMessage)
  ****************************************************************************/
 PRIVATE void vInitAndDisplayKeys(void)
 {
-	#ifndef JENNIC_CHIP_FAMILY_JN514x
-        /*ZPS_vSetOverrideLocalMacAddress((uint64 *)&au8MacAddress);*/
-        volatile uint8 u8Index;
-        for(u8Index=0;u8Index<8;u8Index++)
-        	au8MacAddressVolatile[u8Index] = au8MacAddress[u8Index];
-	#endif
+    /*ZPS_vSetOverrideLocalMacAddress((uint64 *)&au8MacAddress);*/
+    volatile uint8 u8Index;
+    for(u8Index=0;u8Index<8;u8Index++)
+        au8MacAddressVolatile[u8Index] = au8MacAddress[u8Index];
 
 
+#if TRACE_APP_OTA==TRUE
+    uint8 i;
+    DBG_vPrintf(TRACE_APP_OTA, "MAC Address at address = %08x\n\n\n",au8MacAddress);
+    for (i =0;i<8;i++)
+    {
+        DBG_vPrintf(TRACE_APP_OTA, "%02x ",au8MacAddress[i] );
+    }
 
-	#if TRACE_APP_OTA==TRUE
-        uint8 i;
-        DBG_vPrintf(TRACE_APP_OTA, "MAC Address at address = %08x\n\n\n",au8MacAddress);
-        for (i =0;i<8;i++)
-        {
-        	DBG_vPrintf(TRACE_APP_OTA, "%02x ",au8MacAddress[i] );
-        }
-
-        DBG_vPrintf(TRACE_APP_OTA, "\n\n\n Link Key ");
-        for (i =0;i<16;i++)
-        {
-        	DBG_vPrintf(TRACE_APP_OTA, "%02x ",s_au8LnkKeyArray[i] );
-        }
-        DBG_vPrintf(TRACE_APP_OTA, "\n\n\n");
-	#endif
+    DBG_vPrintf(TRACE_APP_OTA, "\n\n\n Link Key ");
+    for (i =0;i<16;i++)
+    {
+        DBG_vPrintf(TRACE_APP_OTA, "%02x ",s_au8LnkKeyArray[i] );
+    }
+    DBG_vPrintf(TRACE_APP_OTA, "\n\n\n");
+#endif
 }
 
 /****************************************************************************
@@ -847,7 +857,6 @@ PUBLIC void vHandleMatchDescriptor( ZPS_tsAfEvent  * psStackEvent)
 
             DBG_vPrintf(TRACE_APP_OTA|OTA_LNT,"OTA Server EP# = %d\n", sZllState.u8OTAserverEP);
 
-            //vGetIEEEAddress();
             eOTA_State = OTA_IEEE_LOOK_UP;
             u32OTAQueryTimeinSec = 0;
         }
@@ -897,8 +906,7 @@ PUBLIC void vHandleIeeeAddressRsp( ZPS_tsAfEvent  * psStackEvent)
     {
         /*Make an entry in the OTA server tables*/
         sZllState.u64IeeeAddrOfServer = sIeeeAddrRsp.u64IeeeAddrRemoteDev;
-        //DBG_vPrintf(TRACE_APP_OTA,  "ieee long %016llx\n", psStackEvent->uEvent.sApsZdpEvent.uZdpData.sIeeeAddrRsp.u64IeeeAddrRemoteDev);
-        DBG_vPrintf(TRACE_APP_OTA,"Entry Added NWK Addr 0x%04x IEEE Addr 0x%016llx",
+        DBG_vPrintf(TRACE_APP_OTA|1,"Entry Added NWK Addr 0x%04x IEEE Addr 0x%016llx",
                 sZllState.u16NwkAddrOfServer, sZllState.u64IeeeAddrOfServer);
         ZPS_eAplZdoAddAddrMapEntry( sZllState.u16NwkAddrOfServer,
                 sZllState.u64IeeeAddrOfServer,

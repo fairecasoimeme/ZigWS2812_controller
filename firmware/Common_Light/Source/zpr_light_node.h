@@ -67,6 +67,12 @@ typedef enum
 } teNODE_STATES;
 
 typedef struct {
+   uint32 u32LedState;
+   uint32 u32LedToggleTime;
+   bool_t bIncreaseTime;
+} tsLedState;
+
+typedef struct {
     enum {
         FACTORY_NEW = 0,
         NOT_FACTORY_NEW = 0xff

@@ -290,6 +290,8 @@ OS_TASK(APP_Commission_Task) {
                     sDstAddr = sEvent.sZllMessage.sSrcAddr;
                     sDstAddr.u16PanId = 0xFFFF;
                     DBG_vPrintf(TRACE_JOIN, "IP cmd 0x%02x\n", sEvent.sZllMessage.eCommand);
+                    DBG_vPrintf(TRACE_JOIN, "u32TransactionId 0x%02x\n", u32TransactionId);
+                    DBG_vPrintf(TRACE_JOIN, "sEvent.sZllMessage.uPayload.sScanReqPayload.u32TransactionId 0x%02x\n", sEvent.sZllMessage.uPayload.sScanReqPayload.u32TransactionId);
                     if (sEvent.sZllMessage.uPayload.sScanReqPayload.u32TransactionId == u32TransactionId)
                     {
                         switch (sEvent.sZllMessage.eCommand)

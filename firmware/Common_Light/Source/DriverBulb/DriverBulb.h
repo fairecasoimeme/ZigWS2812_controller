@@ -77,9 +77,11 @@ PUBLIC uint16 DriverBulb_u16GetAdcValue(uint32 u32ChannelId)__attribute__((weak)
 PUBLIC void DriverBulb_vSet12BitColour(uint32 u32Red, uint32 u32Green, uint32 u32Blue)__attribute__((weak));
 
 
+
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
+
 
 #if defined __cplusplus
 }

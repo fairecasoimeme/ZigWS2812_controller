@@ -239,7 +239,7 @@ OS_TASK(Tick_Task)
     	DriverBulb_vTick();
     	timeProcessWS2812++;
     }
-    if (timeProcessWS2812 > 512)
+    if (timeProcessWS2812 > (512 * 3))
     {
     	WS2812process=FALSE;
     	timeProcessWS2812=0;

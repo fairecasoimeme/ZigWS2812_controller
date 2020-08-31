@@ -57,7 +57,6 @@
 #include "appapi.h"
 #include "zpr_light_node.h"
 
-
 #include "zcl_options.h"
 
 #include "app_common.h"
@@ -89,6 +88,7 @@
 
 
 #define HALT_ON_EXCEPTION      FALSE
+
 
 /****************************************************************************/
 /***        Type Definitions                                              ***/
@@ -124,10 +124,11 @@ extern void *_stack_low_water_mark;
 /***        Local Variables                                               ***/
 /****************************************************************************/
 
-
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
+
+
 
 /****************************************************************************
  *
@@ -166,6 +167,7 @@ PWRM_CALLBACK(Wakeup)
 }
 
 
+
 /****************************************************************************
  *
  * NAME: vAppMain
@@ -184,12 +186,13 @@ PUBLIC void vAppMain(void)
      while (bAHI_GetClkSource() == TRUE);
     bAHI_SetClockRate(2); /* Move CPU to 32 MHz  vAHI_OptimiseWaitStates automatically called */
 #endif
-
+     vAppApiSetHighPowerMode(APP_API_MODULE_HPM05, TRUE);
      DBG_vUartInit(DBG_E_UART_0, DBG_E_UART_BAUD_RATE_115200);
 
     /* Early call to Bulb initialisation to enable fast start up    */
 
     vBULB_Init();
+
 
     /* Bulb is now on 100% white (RGB or Mono) so ensure the LI     */
     /*  module's values are consistent with this initial state      */

@@ -31,6 +31,7 @@
           <SWTimers xmi:type="oscfg:SWTimer" xmi:id="_JGcMgJCbEeKl1rYLymBQ-g" name="APP_RadioRecalTimer" Activates="_jLCzUZCaEeKl1rYLymBQ-g"/>
           <SWTimers xmi:type="oscfg:SWTimer" xmi:id="_ZLSoEDcZEean8IwwT0MpZw" name="APP_PowerOnCountTimer" Activates="_r1y_YDcZEean8IwwT0MpZw"/>
           <SWTimers xmi:type="oscfg:SWTimer" xmi:id="_-joVAPH5EeazKZGsdqX9JQ" name="APP_DiscoveryTimer" Activates="_OY-dEPH6EeazKZGsdqX9JQ"/>
+          <SWTimers xmi:type="oscfg:SWTimer" xmi:id="_jlD-cLw2EeqEvIoHAWXAMw" name="APP_LedBlinkTimer" Activates="_GtWW0Lw3EeqEvIoHAWXAMw"/>
         </HWCounters>
         <Callbacks xmi:type="oscfg:CallbackFunction" xmi:id="_Y9qlUTuwEd6x482rWS0aIQ" name="APP_cbEnableTickTimer"/>
         <Callbacks xmi:type="oscfg:CallbackFunction" xmi:id="_gJsHIDuwEd6x482rWS0aIQ" name="APP_cbDisableTickTimer"/>
@@ -51,6 +52,7 @@
           <CooperativeTasks xmi:type="oscfg:Task" xmi:id="_jLCzUZCaEeKl1rYLymBQ-g" name="APP_RadioRecal" autostarted="true" priority="150"/>
           <CooperativeTasks xmi:type="oscfg:Task" xmi:id="_r1y_YDcZEean8IwwT0MpZw" name="APP_vManagePowerOnCount" PostMessage="___vwMDcZEean8IwwT0MpZw" EnterExitMutex="_98PuEDpJEd6X1p7n01EMHA _DhAXIDpKEd6X1p7n01EMHA _F6f-EDpKEd6X1p7n01EMHA" autostarted="false" priority="1"/>
           <CooperativeTasks xmi:type="oscfg:Task" xmi:id="_OY-dEPH6EeazKZGsdqX9JQ" name="APP_DiscoveryTimerTask" PostMessage="_ibUxEPH6EeazKZGsdqX9JQ" autostarted="false" priority="251"/>
+          <CooperativeTasks xmi:type="oscfg:Task" xmi:id="_GtWW0Lw3EeqEvIoHAWXAMw" name="APP_LedBlinkTask" autostarted="false" priority="301"/>
         </CooperativeTaskGroups>
       </Modules>
       <Modules xmi:type="oscfg:Module" xmi:id="_KdQVET4PEd65Mrxtsaf9rQ" name="Exceptions">
@@ -158,11 +160,16 @@
                   <styles xmi:type="notation:DescriptionStyle" xmi:id="_-jzUIfH5EeazKZGsdqX9JQ" description=""/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-jzUIvH5EeazKZGsdqX9JQ" x="53" y="195" width="-1" height="-1"/>
                 </children>
+                <children xmi:type="notation:Node" xmi:id="_jl0MYLw2EeqEvIoHAWXAMw" visible="true" type="3006" element="_jlD-cLw2EeqEvIoHAWXAMw">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_jl0MY7w2EeqEvIoHAWXAMw" visible="true" type="5005"/>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_jl0MYbw2EeqEvIoHAWXAMw" description=""/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jl0MYrw2EeqEvIoHAWXAMw" x="50" y="290" width="-1" height="-1"/>
+                </children>
                 <styles xmi:type="notation:TitleStyle" xmi:id="_lHpu5jpQEd6X1p7n01EMHA" showTitle="true"/>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_lHpu5zpQEd6X1p7n01EMHA" sorting="None"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_lHpu6DpQEd6X1p7n01EMHA" filtering="None"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHpu4zpQEd6X1p7n01EMHA" x="890" y="23" width="469" height="344"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHpu4zpQEd6X1p7n01EMHA" x="890" y="23" width="469" height="383"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_8lTFETpQEd6X1p7n01EMHA" visible="true" type="3011" element="_8lTFEDpQEd6X1p7n01EMHA">
               <children xmi:type="notation:Node" xmi:id="_8lTFFDpQEd6X1p7n01EMHA" visible="true" type="5022"/>
@@ -279,11 +286,18 @@
                   <styles xmi:type="notation:DescriptionStyle" xmi:id="_OY_rMfH6EeazKZGsdqX9JQ" description=""/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OY_rMvH6EeazKZGsdqX9JQ" x="24" y="31" width="-1" height="-1"/>
                 </children>
+                <children xmi:type="notation:Node" xmi:id="_GtYzELw3EeqEvIoHAWXAMw" visible="true" type="3020" element="_GtWW0Lw3EeqEvIoHAWXAMw">
+                  <children xmi:type="notation:DecorationNode" xmi:id="_GtYzE7w3EeqEvIoHAWXAMw" visible="true" type="5040"/>
+                  <children xmi:type="notation:DecorationNode" xmi:id="_GtYzFLw3EeqEvIoHAWXAMw" visible="true" type="5041"/>
+                  <children xmi:type="notation:DecorationNode" xmi:id="_GtYzFbw3EeqEvIoHAWXAMw" visible="true" type="5042"/>
+                  <styles xmi:type="notation:DescriptionStyle" xmi:id="_GtYzEbw3EeqEvIoHAWXAMw" description=""/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GtYzErw3EeqEvIoHAWXAMw" x="275" y="-38" width="-1" height="-1"/>
+                </children>
                 <styles xmi:type="notation:TitleStyle" xmi:id="_M_hD8asqEeGSvtyb-5HJpA" showTitle="true"/>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_M_hD8qsqEeGSvtyb-5HJpA" sorting="None"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_M_hD86sqEeGSvtyb-5HJpA" filtering="None"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M_eAoqsqEeGSvtyb-5HJpA" x="0" y="28" width="806" height="596"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M_eAoqsqEeGSvtyb-5HJpA" x="2" y="25" width="806" height="596"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_noIu8L4nEeKmir1RTkrnLw" visible="true" type="3016" element="_nn_lAb4nEeKmir1RTkrnLw">
               <children xmi:type="notation:Node" xmi:id="_noIu874nEeKmir1RTkrnLw" visible="true" type="5031"/>
@@ -1207,6 +1221,15 @@
       <element xsi:nil="true"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LNnAUkq6EeeuB9tD3xsGCQ" points="[9, 31, -244, -801]$[9, 612, -244, -220]$[9, 832, -244, 0]$[155, 832, -98, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LNo1gEq6EeeuB9tD3xsGCQ" id="(0.03977272727272727,0.46551724137931033)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_MVmYwLw3EeqEvIoHAWXAMw" visible="true" type="4004" source="_jl0MYLw2EeqEvIoHAWXAMw" target="_GtYzELw3EeqEvIoHAWXAMw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MVmYw7w3EeqEvIoHAWXAMw" visible="true" type="6005">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_MVmYxLw3EeqEvIoHAWXAMw" x="0" y="40"/>
+      </children>
+      <styles xmi:type="notation:RoutingStyle" xmi:id="_MVmYwbw3EeqEvIoHAWXAMw" roundedBendpointsRadius="0" routing="Manual" smoothness="None" avoidObstructions="false" closestDistance="false" jumpLinkStatus="None" jumpLinkType="Semicircle" jumpLinksReverse="false"/>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MVmYwrw3EeqEvIoHAWXAMw" points="[-19, -8, 598, 259]$[-624, -296, -7, -29]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MVm_0Lw3EeqEvIoHAWXAMw" id="(0.13488372093023257,0.4)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
