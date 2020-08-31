@@ -66,6 +66,7 @@
 #endif
 
 
+
 /****************************************************************************/
 /***        Type Definitions                                              ***/
 /****************************************************************************/
@@ -213,8 +214,8 @@ PUBLIC void vAPP_ZCL_DeviceSpecific_Init(void)
     /* Initialise the strings in Basic */
     memcpy(sLight.sBasicServerCluster.au8ManufacturerName, "ZiGate", CLD_BAS_MANUF_NAME_SIZE);
     memcpy(sLight.sBasicServerCluster.au8ModelIdentifier, "WS2812_light_controller", CLD_BAS_MODEL_ID_SIZE);
-    memcpy(sLight.sBasicServerCluster.au8DateCode, "20200124", CLD_BAS_DATE_SIZE);
-    memcpy(sLight.sBasicServerCluster.au8SWBuildID, "0001-0002", CLD_BAS_SW_BUILD_SIZE);
+    memcpy(sLight.sBasicServerCluster.au8DateCode, "20200831", CLD_BAS_DATE_SIZE);
+    memcpy(sLight.sBasicServerCluster.au8SWBuildID, "0001-0004", CLD_BAS_SW_BUILD_SIZE);
 
     sIdEffect.u8Effect = E_CLD_IDENTIFY_EFFECT_STOP_EFFECT;
     sIdEffect.u8Tick = 0;

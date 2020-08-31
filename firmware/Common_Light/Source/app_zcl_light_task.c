@@ -131,7 +131,8 @@ extern PUBLIC bool_t bValidateTLAddress(ZPS_tsInterPanAddress *psDstAddr, uint8 
 /****************************************************************************/
 
 PRIVATE tsZLL_CommissionEndpoint sCommissionEndpoint;
-
+bool WS2812process=FALSE;
+uint16_t timeProcessWS2812=0;
 
 /****************************************************************************/
 /***        Exported Functions                                            ***/
@@ -233,13 +234,23 @@ OS_TASK(Tick_Task)
     u32Tick1Sec++;
 
     /* Provide processor cycles to any drivers that need time behaviour */
-    DriverBulb_vTick();
+    if (WS2812process)
+    {
+    	DriverBulb_vTick();
+    	timeProcessWS2812++;
+    }
+    if (timeProcessWS2812 > 512)
+    {
+    	WS2812process=FALSE;
+    	timeProcessWS2812=0;
+    }
 
     /* Wrap the Tick10ms counter and provide 100ms ticks to cluster */
     if (u32Tick10ms > 9)
     {
         eZLL_Update100mS();
         u32Tick10ms = 0;
+
     }
 #if ( defined CLD_LEVEL_CONTROL) && !(defined MONO_ON_OFF)  /* add in nine 10ms interpolation points */
     else
@@ -340,6 +351,7 @@ PRIVATE void APP_ZCL_cbGeneralCallback(tsZCL_CallBackEvent *psEvent)
 #if TRUE == TRACE_ZCL
     switch (psEvent->eEventType)
     {
+
 
     case E_ZCL_CBET_LOCK_MUTEX:
         //DBG_vPrintf(TRACE_ZCL, "\nEVT: Lock Mutex\r\n");
@@ -639,6 +651,7 @@ PRIVATE void APP_ZCL_cbEndpointCallback(tsZCL_CallBackEvent *psEvent)
         break;
 
     }
+
 
 
     if (psEvent->eEventType == E_ZCL_CBET_CLUSTER_CUSTOM)
