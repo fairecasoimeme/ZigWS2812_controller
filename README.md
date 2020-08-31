@@ -5,7 +5,6 @@ If you get a Philips Hue or ZiGate gateway, you could play with your strip or ot
 
 This project use NXP JN5168 ZigBee module.
 
-
 Vidéo : 
 [![Watch the video](https://img.youtube.com/vi/ZlssjOw1DXE/maxresdefault.jpg)](https://youtu.be/ZlssjOw1DXE)
 
@@ -16,6 +15,11 @@ In progress
 
 ## Hardware
 In progress
+
+## Version v0.4
+
+* Fix twinkle leds
+* Fix radio sensivity and txPower
 
 ## Version v0.3
 
