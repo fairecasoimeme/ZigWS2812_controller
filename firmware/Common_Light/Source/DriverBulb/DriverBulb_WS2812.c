@@ -62,7 +62,7 @@
 #endif /* WS2812_DRIVER_LED_COUNT */
 
 #ifndef WS2812_DRIVER_TICK_DIVISOR
-#define WS2812_DRIVER_TICK_DIVISOR 1
+#define WS2812_DRIVER_TICK_DIVISOR 3
 #endif /* WS2812_DRIVER_TICK_DIVISOR */
 
 /* Define the DIO mask for the WS2812 data pin */
