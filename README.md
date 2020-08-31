@@ -1,4 +1,4 @@
-# ZigWS2812_controller
+# ZigLight
 
 With this, you will control any kind of WS2812 Leds with zigbee protocol.
 If you get a Philips Hue or ZiGate gateway, you could play with your strip or other LEDs stuff
@@ -8,7 +8,7 @@ This project use NXP JN5168 ZigBee module.
 Vidéo : 
 [![Watch the video](https://img.youtube.com/vi/ZlssjOw1DXE/maxresdefault.jpg)](https://youtu.be/ZlssjOw1DXE)
 
-<div ><img width="300px" src="https://github.com/fairecasoimeme/ZigWS2812_controller/blob/master/Lifesmart%20cololight%20controled.jpg" /><br><img width="300px" src="https://github.com/fairecasoimeme/ZigWS2812_controller/blob/master/Screenshot%20philips%20hue%20appairage.jpg" /></div>
+<div ><img width="500px" src="https://lixee.shop/74-large_default/pizigate.jpg" /><img src="https://lixee.shop/73-large_default/pizigate.jpg" /><br><img width="300px" src="https://github.com/fairecasoimeme/ZigWS2812_controller/blob/master/Lifesmart%20cololight%20controled.jpg" /><br><img width="300px" src="https://github.com/fairecasoimeme/ZigWS2812_controller/blob/master/Screenshot%20philips%20hue%20appairage.jpg" /></div>
 
 ## Install
 In progress
