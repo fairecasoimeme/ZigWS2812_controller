@@ -23,6 +23,7 @@ b.nop
 b.nop
 b.nop
 b.nop
+b.nop
 b.addi     r7,r7,0x1
 b.sfne     r7,r4
 b.bf       .LbitLoop

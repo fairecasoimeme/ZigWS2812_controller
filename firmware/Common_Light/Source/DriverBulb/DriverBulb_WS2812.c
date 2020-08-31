@@ -58,11 +58,11 @@
 
 /* Default to 8 LEDs in the string */
 #ifndef WS2812_DRIVER_LED_COUNT
-#define WS2812_DRIVER_LED_COUNT 720
+#define WS2812_DRIVER_LED_COUNT 512
 #endif /* WS2812_DRIVER_LED_COUNT */
 
 #ifndef WS2812_DRIVER_TICK_DIVISOR
-#define WS2812_DRIVER_TICK_DIVISOR 3
+#define WS2812_DRIVER_TICK_DIVISOR 1
 #endif /* WS2812_DRIVER_TICK_DIVISOR */
 
 /* Define the DIO mask for the WS2812 data pin */
@@ -88,7 +88,8 @@ typedef struct
 /****************************************************************************/
 /***        Exported Variables                                            ***/
 /****************************************************************************/
-
+extern bool WS2812process;
+extern uint16_t timeProcessWS2812;
 /****************************************************************************/
 /***        Global Variables                                              ***/
 /****************************************************************************/
@@ -107,11 +108,13 @@ PRIVATE struct
 
 PRIVATE tsWS2812Led asWS2812Data[WS2812_DRIVER_LED_COUNT];
 
+
 /****************************************************************************/
 /***        Exported Functions                                            ***/
 /****************************************************************************/
 
 extern void WS2812_vOutputData(tsWS2812Led *psLed, uint32 u32Bits, uint32 u32OutputMask);
+
 
 PUBLIC void DriverBulb_vInit(void)
 {
@@ -130,23 +133,31 @@ PUBLIC void DriverBulb_vInit(void)
 PUBLIC void DriverBulb_vOn(void)
 {
 	DriverBulb_vSetOnOff(TRUE);
+	WS2812process=TRUE;
+	timeProcessWS2812=0;
 }
 
 PUBLIC void DriverBulb_vOff(void)
 {
 	DriverBulb_vSetOnOff(FALSE);
+	WS2812process=TRUE;
+	timeProcessWS2812=0;
 }
 
 PUBLIC void DriverBulb_vSetOnOff(bool_t bOn)
 {
 	DBG_vPrintf(TRACE_DRIVER, "\nS:%s",(bOn ? "ON" : "OFF"));
 	sWS2812State.bOn =  bOn;
+	WS2812process=TRUE;
+	timeProcessWS2812=0;
 }
 
 PUBLIC void DriverBulb_vSetLevel(uint32 u32Level)
 {
 	DBG_vPrintf(TRACE_DRIVER, "\nL%d",u32Level);
 	sWS2812State.u8Level = MIN(255, u32Level);
+	WS2812process=TRUE;
+	timeProcessWS2812=0;
 }
 
 PUBLIC void DriverBulb_vSetColour(uint32 u32Red, uint32 u32Green, uint32 u32Blue)
@@ -155,6 +166,9 @@ PUBLIC void DriverBulb_vSetColour(uint32 u32Red, uint32 u32Green, uint32 u32Blue
 	sWS2812State.u8Red   = MIN(255, u32Red);
 	sWS2812State.u8Green = MIN(255, u32Green);
 	sWS2812State.u8Blue  = MIN(255, u32Blue);
+	WS2812process=TRUE;
+	timeProcessWS2812=0;
+
 }
 
 PUBLIC bool_t DriverBulb_bOn(void)
@@ -199,7 +213,7 @@ PUBLIC void DriverBulb_vTick(void)
 
 		// WS2812 LEDs have very strict timing requirements, therefore we must disable interrupts during the refresh
 		MICRO_DISABLE_INTERRUPTS();
-		WS2812_vOutputData(asWS2812Data, sizeof(asWS2812Data) * 8, WS2812_DRIVER_LED_PIN_MASK);
+		WS2812_vOutputData(asWS2812Data, sizeof(asWS2812Data) * 8 , WS2812_DRIVER_LED_PIN_MASK);
 		MICRO_ENABLE_INTERRUPTS();
 	}
 }
